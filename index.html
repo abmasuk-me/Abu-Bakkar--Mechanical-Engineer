@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abu Bakkar | Mechanical Engineering </title>
+    <meta name="description" content="Portfolio of Abu Bakkar, B.Sc. in Mechanical Engineering from CUET. Specializing in research, piezoelectric materials, CAD, and simulation.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="overflow:hidden">
+	 <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-scene">
+            <!-- Blueprint grid background -->
+            <div class="bp-grid"></div>
+
+            <!-- SVG engineering animation — precision blueprint style -->
+            <svg class="preloader-svg" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <!-- Metal gradient for gear faces -->
+                    <radialGradient id="gearFaceGrad" cx="35%" cy="35%" r="65%">
+                        <stop offset="0%" stop-color="rgba(22,36,58,1)"/>
+                        <stop offset="100%" stop-color="rgba(6,14,26,1)"/>
+                    </radialGradient>
+                    <radialGradient id="innerGearGrad" cx="40%" cy="40%" r="60%">
+                        <stop offset="0%" stop-color="rgba(30,48,78,1)"/>
+                        <stop offset="100%" stop-color="rgba(8,16,30,1)"/>
+                    </radialGradient>
+                    <!-- Piston metal gradient -->
+                    <linearGradient id="pistonGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="rgba(123,178,217,0.25)"/>
+                        <stop offset="50%" stop-color="rgba(58,123,213,0.12)"/>
+                        <stop offset="100%" stop-color="rgba(123,178,217,0.08)"/>
+                    </linearGradient>
+                    <linearGradient id="cylWallGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="rgba(123,178,217,0.4)"/>
+                        <stop offset="100%" stop-color="rgba(123,178,217,0.15)"/>
+                    </linearGradient>
+                </defs>
+
+                <!-- ======= OUTER LARGE GEAR (12 teeth, CW slow) ======= -->
+                <g class="gear-outer" transform="translate(100,118)">
+                    <!-- Pitch circle reference (blueprint dashed) -->
+                    <circle r="58" fill="none" stroke="rgba(58,123,213,0.12)" stroke-width="0.6" stroke-dasharray="2.5 2"/>
+                    <!-- Root circle -->
+                    <circle r="50" fill="url(#gearFaceGrad)" stroke="rgba(58,123,213,0.2)" stroke-width="0.8"/>
+                    <!-- Hub ring -->
+                    <circle r="18" fill="none" stroke="rgba(58,123,213,0.35)" stroke-width="1"/>
+                    <circle r="12" fill="url(#innerGearGrad)" stroke="rgba(58,123,213,0.5)" stroke-width="1.2"/>
+                    <!-- Spoke lines (4 spokes) -->
+                    <line x1="0" y1="-12" x2="0" y2="-48" stroke="rgba(58,123,213,0.18)" stroke-width="3.5" stroke-linecap="round"/>
+                    <line x1="0" y1="12" x2="0" y2="48" stroke="rgba(58,123,213,0.18)" stroke-width="3.5" stroke-linecap="round"/>
+                    <line x1="-12" y1="0" x2="-48" y2="0" stroke="rgba(58,123,213,0.18)" stroke-width="3.5" stroke-linecap="round"/>
+                    <line x1="12" y1="0" x2="48" y2="0" stroke="rgba(58,123,213,0.18)" stroke-width="3.5" stroke-linecap="round"/>
+                    <!-- Hub bolt holes (6) -->
+                    <circle cx="0" cy="-7" r="1.5" fill="none" stroke="rgba(58,123,213,0.4)" stroke-width="0.7"/>
+                    <circle cx="6.06" cy="3.5" r="1.5" fill="none" stroke="rgba(58,123,213,0.4)" stroke-width="0.7"/>
+                    <circle cx="-6.06" cy="3.5" r="1.5" fill="none" stroke="rgba(58,123,213,0.4)" stroke-width="0.7"/>
+                    <!-- Addendum circle (tip of teeth) -->
+                    <circle r="58" fill="none" stroke="rgba(58,123,213,0.08)" stroke-width="0.5"/>
+                    <!-- 12 involute-profile teeth -->
+                    <g stroke="#3a7bd5" stroke-width="1" fill="rgba(10,20,38,0.9)">
+                        <path d="M-4.5,-50 C-5,-54 -3,-58 0,-58 C3,-58 5,-54 4.5,-50 Z" transform="rotate(0)"/>
+                        <path d="M-4.5,-50 C-5,-54 -3,-58 0,-58 C3,-58 5,-54 4.5,-50 Z" transform="rotate(30)"/>
+                        <path d="M-4.5,-50 C-5,-54 -3,-58 0,-58 C3,-58 5,-54 4.5,-50 Z" transform="rotate(60)"/>
+                        <path d="M-4.5,-50 C-5,-54 -3,-58 0,-58 C3,-58 5,-54 4.5,-50 Z" transform="rotate(90)"/>
+                        <path d="M-4.5,-50 C-5,-54 -3,-58 0,-58 C3,-58 5,-54 4.5,-50 Z" transform="rotate(120)"/>
+                        <path d="M-4.5,-50 C-5,-54 -3,-58 0,-58 C3,-58 5,-54 4.5,-50 Z" transform="rotate(150)"/>
+                        <path d="M-4.5,-50 C-5,-54 -3,-58 0,-58 C3,-58 5,-54 4.5,-50 Z" transform="rotate(180)"/>
+                        <path d="M-4.5,-50 C-5,-54 -3,-58 0,-58 C3,-58 5,-54 4.5,-50 Z" transform="rotate(210)"/>
+                        <path d="M-4.5,-50 C-5,-54 -3,-58 0,-58 C3,-58 5,-54 4.5,-50 Z" transform="rotate(240)"/>
+                        <path d="M-4.5,-50 C-5,-54 -3,-58 0,-58 C3,-58 5,-54 4.5,-50 Z" transform="rotate(270)"/>
+                        <path d="M-4.5,-50 C-5,-54 -3,-58 0,-58 C3,-58 5,-54 4.5,-50 Z" transform="rotate(300)"/>
+                        <path d="M-4.5,-50 C-5,-54 -3,-58 0,-58 C3,-58 5,-54 4.5,-50 Z" transform="rotate(330)"/>
+                    </g>
+                    <!-- Center shaft bore -->
+                    <circle r="5" fill="rgba(6,14,26,0.95)" stroke="rgba(58,123,213,0.6)" stroke-width="1"/>
+                    <!-- Keyway slot -->
+                    <rect x="-1.5" y="-8" width="3" height="3" fill="rgba(6,14,26,0.95)" stroke="rgba(58,123,213,0.5)" stroke-width="0.6"/>
+                </g>
+
+                <!-- ======= SMALL PINION GEAR (meshing, top-right, CCW fast) ======= -->
+                <g class="gear-main" transform="translate(163,62)">
+                    <!-- Root circle -->
+                    <circle r="22" fill="url(#innerGearGrad)" stroke="#e06540" stroke-width="1.4"/>
+                    <!-- Pitch reference -->
+                    <circle r="26" fill="none" stroke="rgba(224,101,64,0.12)" stroke-width="0.5" stroke-dasharray="2 1.5"/>
+                    <!-- 3 spokes -->
+                    <line x1="0" y1="-6" x2="0" y2="-20" stroke="rgba(224,101,64,0.22)" stroke-width="2.8" stroke-linecap="round"/>
+                    <line x1="5.2" y1="3" x2="17.3" y2="10" stroke="rgba(224,101,64,0.22)" stroke-width="2.8" stroke-linecap="round"/>
+                    <line x1="-5.2" y1="3" x2="-17.3" y2="10" stroke="rgba(224,101,64,0.22)" stroke-width="2.8" stroke-linecap="round"/>
+                    <!-- Hub -->
+                    <circle r="7" fill="url(#gearFaceGrad)" stroke="rgba(224,101,64,0.4)" stroke-width="1"/>
+                    <!-- Chamfer lines on hub -->
+                    <circle r="4" fill="none" stroke="rgba(224,101,64,0.25)" stroke-width="0.6"/>
+                    <!-- 8 teeth — involute shaped -->
+                    <g stroke="#e06540" stroke-width="1.1" fill="rgba(8,16,28,0.95)">
+                        <path d="M-3,-22 C-3.5,-25.5 -1.5,-27 0,-27 C1.5,-27 3.5,-25.5 3,-22 Z" transform="rotate(0)"/>
+                        <path d="M-3,-22 C-3.5,-25.5 -1.5,-27 0,-27 C1.5,-27 3.5,-25.5 3,-22 Z" transform="rotate(45)"/>
+                        <path d="M-3,-22 C-3.5,-25.5 -1.5,-27 0,-27 C1.5,-27 3.5,-25.5 3,-22 Z" transform="rotate(90)"/>
+                        <path d="M-3,-22 C-3.5,-25.5 -1.5,-27 0,-27 C1.5,-27 3.5,-25.5 3,-22 Z" transform="rotate(135)"/>
+                        <path d="M-3,-22 C-3.5,-25.5 -1.5,-27 0,-27 C1.5,-27 3.5,-25.5 3,-22 Z" transform="rotate(180)"/>
+                        <path d="M-3,-22 C-3.5,-25.5 -1.5,-27 0,-27 C1.5,-27 3.5,-25.5 3,-22 Z" transform="rotate(225)"/>
+                        <path d="M-3,-22 C-3.5,-25.5 -1.5,-27 0,-27 C1.5,-27 3.5,-25.5 3,-22 Z" transform="rotate(270)"/>
+                        <path d="M-3,-22 C-3.5,-25.5 -1.5,-27 0,-27 C1.5,-27 3.5,-25.5 3,-22 Z" transform="rotate(315)"/>
+                    </g>
+                    <!-- Shaft -->
+                    <circle r="3.5" fill="rgba(6,14,26,0.95)" stroke="#e06540" stroke-width="0.9"/>
+                </g>
+
+                <!-- ======= CRANKSHAFT + PISTON ASSEMBLY ======= -->
+                <!-- Cylinder block walls -->
+                <g class="piston-group">
+                    <!-- Left wall -->
+                    <rect x="155" y="100" width="5" height="52" rx="1" fill="none" stroke="url(#cylWallGrad)" stroke-width="1.2"/>
+                    <!-- Right wall -->
+                    <rect x="210" y="100" width="5" height="52" rx="1" fill="none" stroke="url(#cylWallGrad)" stroke-width="1.2"/>
+                    <!-- Cylinder head (top cap) -->
+                    <rect x="155" y="96" width="60" height="6" rx="1.5" fill="rgba(10,22,40,0.8)" stroke="rgba(123,178,217,0.5)" stroke-width="1"/>
+                    <!-- Head bolt details -->
+                    <circle cx="160" cy="99" r="1.5" fill="none" stroke="rgba(123,178,217,0.5)" stroke-width="0.7"/>
+                    <circle cx="210" cy="99" r="1.5" fill="none" stroke="rgba(123,178,217,0.5)" stroke-width="0.7"/>
+                    <!-- Cylinder bore shading lines -->
+                    <line x1="160" y1="104" x2="160" y2="150" stroke="rgba(58,123,213,0.06)" stroke-width="1"/>
+                    <line x1="165" y1="104" x2="165" y2="150" stroke="rgba(58,123,213,0.04)" stroke-width="1"/>
+
+                    <!-- Piston head -->
+                    <rect class="piston-head" x="159" y="116" width="52" height="22" rx="2.5"
+                        fill="url(#pistonGrad)" stroke="#7bb2d9" stroke-width="1.4"/>
+                    <!-- Piston ring grooves (2 rings) -->
+                    <line class="piston-head" x1="159" y1="123" x2="211" y2="123" stroke="rgba(123,178,217,0.4)" stroke-width="1"/>
+                    <line class="piston-head" x1="159" y1="130" x2="211" y2="130" stroke="rgba(123,178,217,0.3)" stroke-width="1"/>
+                    <!-- Wrist pin -->
+                    <circle class="piston-head" cx="185" cy="127" r="4" fill="rgba(6,14,26,0.9)" stroke="rgba(123,178,217,0.55)" stroke-width="1"/>
+                    <circle class="piston-head" cx="185" cy="127" r="1.8" fill="none" stroke="rgba(123,178,217,0.4)" stroke-width="0.6"/>
+
+                    <!-- Connecting rod -->
+                    <line class="piston-rod" x1="185" y1="127" x2="100" y2="118"
+                        stroke="#7bb2d9" stroke-width="2.2" stroke-linecap="round" opacity="0.65"/>
+                    <!-- Big end (crank journal) circle -->
+                    <circle class="piston-rod" cx="100" cy="118" r="5.5" fill="rgba(6,14,26,0.8)" stroke="#7bb2d9" stroke-width="1.1" opacity="0.7"/>
+
+                    <!-- Exhaust port lines (right of cylinder) -->
+                    <line x1="218" y1="106" x2="226" y2="106" stroke="rgba(123,178,217,0.35)" stroke-width="1" stroke-linecap="round"/>
+                    <line x1="218" y1="111" x2="229" y2="111" stroke="rgba(123,178,217,0.25)" stroke-width="1" stroke-linecap="round"/>
+                    <line x1="218" y1="116" x2="226" y2="116" stroke="rgba(123,178,217,0.2)" stroke-width="1" stroke-linecap="round"/>
+                    <!-- Intake port (left) -->
+                    <line x1="148" y1="106" x2="154" y2="106" stroke="rgba(224,101,64,0.3)" stroke-width="1" stroke-linecap="round"/>
+                    <line x1="145" y1="111" x2="154" y2="111" stroke="rgba(224,101,64,0.2)" stroke-width="1" stroke-linecap="round"/>
+                </g>
+
+                <!-- ======= BLUEPRINT DIMENSION ANNOTATIONS ======= -->
+                <g opacity="0.3">
+                    <!-- Bottom dimension line -->
+                    <line x1="30" y1="202" x2="215" y2="202" stroke="#3a7bd5" stroke-width="0.7" stroke-dasharray="3 2"/>
+                    <line x1="30" y1="198" x2="30" y2="206" stroke="#3a7bd5" stroke-width="0.7"/>
+                    <line x1="215" y1="198" x2="215" y2="206" stroke="#3a7bd5" stroke-width="0.7"/>
+                    <!-- Left dimension line -->
+                    <line x1="22" y1="38" x2="22" y2="195" stroke="#3a7bd5" stroke-width="0.7" stroke-dasharray="3 2"/>
+                    <line x1="18" y1="38" x2="26" y2="38" stroke="#3a7bd5" stroke-width="0.7"/>
+                    <line x1="18" y1="195" x2="26" y2="195" stroke="#3a7bd5" stroke-width="0.7"/>
+                    <!-- Center crosshair marks -->
+                    <line x1="97" y1="114" x2="103" y2="114" stroke="#e06540" stroke-width="0.6" opacity="0.5"/>
+                    <line x1="100" y1="111" x2="100" y2="117" stroke="#e06540" stroke-width="0.6" opacity="0.5"/>
+                </g>
+
+                <!-- ======= PROGRESS ARC ======= -->
+                <circle class="progress-arc" cx="120" cy="120" r="108"
+                    fill="none" stroke="#e06540" stroke-width="1.2"
+                    stroke-dasharray="679" stroke-dashoffset="679"
+                    stroke-linecap="round"
+                    transform="rotate(-90 120 120)" opacity="0.7"/>
+
+                <!-- Corner registration marks -->
+                <g stroke="rgba(58,123,213,0.4)" stroke-width="0.8" fill="none">
+                    <path d="M8,8 L8,18 M8,8 L18,8"/>
+                    <path d="M232,8 L222,8 M232,8 L232,18"/>
+                    <path d="M8,232 L8,222 M8,232 L18,232"/>
+                    <path d="M232,232 L222,232 M232,232 L232,222"/>
+                </g>
+            </svg>
+
+            <!-- Text block -->
+            <div class="preloader-info">
+                <span class="preloader-label">ABU BAKKAR</span>
+                <span class="preloader-sub">Mechanical Engineer</span>
+                <div class="preloader-bar-wrap">
+                    <div class="preloader-bar-fill"></div>
+                </div>
+                <span class="preloader-pct" id="preloaderPct">0%</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Particle Background -->
+    <div id="tsparticles"></div>
+
+    <!-- Floating Gears -->
+    <div class="floating-gears" aria-hidden="true">
+        <i class="fa-solid fa-gear fg fg-1"></i>
+        <i class="fa-solid fa-gear fg fg-2"></i>
+        <i class="fa-solid fa-gear fg fg-3"></i>
+        <i class="fa-solid fa-gear fg fg-4"></i>
+        <i class="fa-solid fa-gear fg fg-5"></i>
+        <i class="fa-solid fa-gear fg fg-6"></i>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#about" class="logo">
+                <i class="fa-solid fa-gear gear-icon"></i>
+                <span>ABU BAKKAR</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#leadership">Leadership</a></li>
+                <li><a href="#references">References</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="about">
+        <div class="hero-content">
+            <div class="hero-tag">
+                <i class="fa-solid fa-drafting-compass"></i>
+                <span>Mechanical Engineer &amp; Researcher</span>
+            </div>
+            <h1 class="glitch" data-text="ABU BAKKAR">ABU BAKKAR</h1>
+            <p class="hero-subtitle">
+                <span id="typewriter"></span><span class="cursor">|</span>
+            </p>
+
+            <p class="summary">
+                A passionate Mechanical Engineering graduate driven by research and innovation.
+                Skilled in experimental analysis, simulation, and CAD, with published work in
+                piezoelectric materials and renewable energy. Actively seeking graduate
+                assistantships to advance research in sustainable engineering solutions.
+            </p>
+
+            <div class="contact-row">
+                <a href="mailto:abmasuk00@gmail.com" class="contact-chip">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>abmasuk00@gmail.com</span>
+                </a>
+                <a href="tel:+8801646511803" class="contact-chip">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+88 01646511803</span>
+                </a>
+                <span class="contact-chip">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Chittagong, Bangladesh</span>
+                </span>
+                <a href="https://linkedin.com/in/abu-bakkar-950694345" target="_blank" rel="noopener" class="contact-chip">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+
+            <div class="hero-actions">
+                <a href="mailto:abmasuk00@gmail.com" class="btn primary-btn"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a>
+                <a href="abu_bakkar_cv.pdf" download class="btn secondary-btn"><i class="fa-solid fa-download"></i> Download CV</a>
+                <a href="mailto:abmasuk00@gmail.com?subject=Request%20for%20Certificates%20and%20Research%20Papers" class="btn secondary-btn"><i class="fa-solid fa-file-signature"></i> Request Docs</a>
+            </div>
+        </div>
+        <div class="hero-graphic">
+            <div class="profile-frame">
+                <img src="pic.jpg" alt="Abu Bakkar - Mechanical Engineer" class="profile-img">
+                <div class="profile-glow"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Education Section -->
+        <section id="education" class="section dark-section reveal">
+            <div class="section-header">
+                <h2>Education</h2>
+                <div class="sec-line blueprint-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge ongoing">Ongoing</span>
+                        <h3>Master of Science (MSc) in Mechanical Engineering</h3>
+                        <p class="timeline-institution">
+                            <a href="https://www.cuet.ac.bd/" target="_blank" rel="noopener">
+                                <i class="fa-solid fa-university"></i>
+                                Chittagong University of Engineering &amp; Technology (CUET)
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge completed">Completed</span>
+                        <h3>Bachelor of Science (BSc) in Mechanical Engineering</h3>
+                        <p class="timeline-institution">
+                            <a href="https://www.cuet.ac.bd/" target="_blank" rel="noopener">
+                                <i class="fa-solid fa-university"></i>
+                                Chittagong University of Engineering &amp; Technology (CUET)
+                            </a>
+                        </p>
+                        <div class="timeline-details">
+                            <span class="detail-item"><strong>CGPA:</strong> 3.59 / 4.00</span>
+                            <span class="detail-item"><strong>Rank:</strong> 30th out of 180</span>
+                        </div>
+                    </div>
+                </div>
+		<div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge completed">Completed</span>
+                        <h3>Higher Secondary Certificate (H.S.C)</h3>
+                        <p class="timeline-institution">
+                            <a href="https://cuetscctg.edu.bd/" target="_blank" rel="noopener">
+                                <i class="fa-solid fa-university"></i>
+                                Chittagong Engineering University School &amp;  College, (CEUSC)
+                            </a>
+                        </p>
+                        <div class="timeline-details">
+                            <span class="detail-item"><strong>GPA:</strong> 5.00 / 5.00</span>
+                            <span class="detail-item"><strong>Year of Completion:</strong>2019</span>
+                        </div>
+                    </div>
+                </div>
+		
+		<div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge completed">Completed</span>
+                        <h3>Secondary School Certificate (S.S.C)</h3>
+                        <p class="timeline-institution">
+                            <a href="https://cuetscctg.edu.bd/" target="_blank" rel="noopener">
+                                <i class="fa-solid fa-university"></i>
+                                Chittagong Engineering University School &amp;  College, (CEUSC)
+                            </a>
+                        </p>
+                        <div class="timeline-details">
+                            <span class="detail-item"><strong>GPA:</strong> 5.00 / 5.00</span>
+                            <span class="detail-item"><strong>Year of Completion:</strong> 2017</span>
+                        </div>
+                    </div>
+                </div>
+		<div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge completed">Completed</span>
+                        <h3>Junior School Certificate (J.S.C)</h3>
+                        <p class="timeline-institution">
+                            <a href="https://cuetscctg.edu.bd/" target="_blank" rel="noopener">
+                                <i class="fa-solid fa-university"></i>
+                                Chittagong Engineering University School &amp;  College, (CEUSC)
+                            </a>
+                        </p>
+                        <div class="timeline-details">
+                            <span class="detail-item"><strong>GPA:</strong> 5.00 / 5.00</span>
+                            <span class="detail-item"><strong>Year of Completion:</strong> 2014</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+	<!-- Skills Section -->
+        <section id="skills" class="section reveal">
+            <div class="section-header">
+                <h2>Technical Skills</h2>
+                <div class="sec-line blueprint-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>Programming</h3>
+                    <ul>
+                        <li>MATLAB</li>
+                        <li>C / C++</li>
+                        <li>CNC Coding</li>
+                        <li>Fortran</li>
+                        <li>HTML</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>Simulation</h3>
+                    <ul>
+                        <li>Ansys</li>
+                        <li>Aspen Plus</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="card-icon"><i class="fa-solid fa-cube"></i></div>
+                    <h3>CAD / Design</h3>
+                    <ul>
+                        <li>SolidWorks</li>
+                        <li>GIMP</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="card-icon"><i class="fa-solid fa-file-lines"></i></div>
+                    <h3>Documentation</h3>
+                    <ul>
+                        <li>MS Office Suite</li>
+                        <li>Data Analysis</li>
+                        <li>Project Management</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Thesis & Experience Section -->
+        <section id="experience" class="section reveal">
+            <div class="section-header">
+                <h2>Research &amp; Experience</h2>
+                <div class="sec-line blueprint-line"></div>
+            </div>
+
+            <!-- Thesis -->
+           
+		<div class="thesis-block">
+                <div class="thesis-label">
+                    <i class="fa-solid fa-wind"></i> Academic Project
+                </div>
+                <div class="thesis-card">
+                    <h3>Design and Optimization of Savonius Wind Turbine using CFD Simulation</h3>
+                    <p class="thesis-desc">
+                        Designed and optimized a Savonius wind turbine using CFD simulations, identifying 130&deg; blade angle as optimal for peak power and aerodynamic efficiency in low-wind conditions.
+                    </p>
+                </div>
+                </div>
+		 <div class="thesis-label">
+                    <i class="fa-solid fa-microscope"></i> Undergraduate Thesis
+                </div>
+                <div class="thesis-card">
+                    <h3>A Comparative Analysis Among Balsa, Pine and Gamari as a Potential Piezoelectric Material</h3>
+                    <p class="thesis-supervisor"><i class="fa-solid fa-user-tie"></i> Supervisor: Prof. Sajal Chandra Banik</p>
+                    <p class="thesis-desc">
+                        Performed experimental analysis on Balsa, Pine, and Palm wood to compare their voltage generation capability and piezoelectric efficiency for renewable energy applications.
+                    </p>
+                </div>
+		</br>
+		 <div class="thesis-label">
+                    <i class="fa-solid fa-microscope"></i> Undergraduate Thesis
+                </div>
+                <div class="thesis-card">
+                    <h3>A Comparative Analysis Among Balsa, Pine and Gamari as a Potential Piezoelectric Material</h3>
+                    <p class="thesis-supervisor"><i class="fa-solid fa-user-tie"></i> Supervisor: Prof. Sajal Chandra Banik</p>
+                    <p class="thesis-desc">
+                        Performed experimental analysis on Balsa, Pine, and Palm wood to compare their voltage generation capability and piezoelectric efficiency for renewable energy applications.
+                    </p>
+                </div>
+                </div>
+
+         
+        </section>
+
+        <!-- Publications -->
+        <section id="publications" class="section dark-section reveal">
+            <div class="section-header">
+                <h2>Publications</h2>
+                <div class="sec-line blueprint-line"></div>
+            </div>
+            <div class="pub-grid">
+                <div class="pub-card">
+                    <div class="pub-badge">Presented</div>
+                    <h4>A Comparative Analysis Among Balsa, Pine and Gamari as Potential Piezoelectric Materials</h4>
+                    <p class="pub-conf"><i class="fa-solid fa-calendar-days"></i> ICMERE 2025</p>
+                    <p class="pub-venue">International Conference on Mechanical Engineering and Renewable Energy</p>
+                </div>
+                <div class="pub-card">
+                    <div class="pub-badge">Presented</div>
+                    <h4>Fabrication &amp; Performance Analysis of Automobile Brake Pad Using Recycled &amp; Eco-Friendly Materials</h4>
+                    <p class="pub-conf"><i class="fa-solid fa-calendar-days"></i> ICMERE 2025</p>
+                    <p class="pub-venue">International Conference on Mechanical Engineering and Renewable Energy</p>
+                </div>
+                <div class="pub-card featured">
+                    <div class="pub-badge highlight">Under Review &mdash; Q1 Journal</div>
+                    <h4>Experimental Investigation of Wood-Based Piezoelectric Materials for Sustainable Energy Harvesting</h4>
+                    <p class="pub-authors"><i class="fa-solid fa-users"></i> Abu Bakkar, Chinmoy Deb Nath, Dr. Sajal Chandra Banik</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience -->
+        <section id="prof-experience" class="section dark-section reveal">
+            <div class="section-header">
+                <h2>Professional Experience</h2>
+                <div class="sec-line blueprint-line"></div>
+            </div>
+            <div class="prof-exp-wrapper">
+                <!-- Vertical track line -->
+                <div class="prof-track"></div>
+
+                <div class="prof-exp-card" data-index="01">
+                    <div class="pec-connector"></div>
+                    <div class="pec-node">
+                        <i class="fa-solid fa-industry"></i>
+                    </div>
+                    <div class="pec-body">
+                        <div class="pec-header">
+                            <div class="pec-meta">
+                                <span class="pec-tag">Industrial</span>
+                                <span class="pec-index">01</span>
+                            </div>
+                            <h3 class="pec-title">Industrial Attachment</h3>
+                            <p class="pec-org"><i class="fa-solid fa-location-dot"></i> Four H Dyeing and Printing Limited</p>
+                        </div>
+                        <p class="pec-desc">Hands-on exposure to industrial-scale textile dyeing and printing operations — observing mechanical systems, process workflows, and quality control procedures in a live manufacturing environment.</p>
+                        <div class="pec-skills">
+                            <span>Process Engineering</span>
+                            <span>Mechanical Systems</span>
+                            <span>Quality Control</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prof-exp-card" data-index="02">
+                    <div class="pec-connector"></div>
+                    <div class="pec-node">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <div class="pec-body">
+                        <div class="pec-header">
+                            <div class="pec-meta">
+                                <span class="pec-tag">Technical</span>
+                                <span class="pec-index">02</span>
+                            </div>
+                            <h3 class="pec-title">CNC Programming &amp; 3D Printing</h3>
+                            <p class="pec-org"><i class="fa-solid fa-location-dot"></i> CUET IICT — ICT Division, Bangladesh</p>
+                        </div>
+                        <p class="pec-desc">Gained practical training in CNC machine programming and additive manufacturing (3D printing) techniques under the ICT Division initiative. Applied G-code fundamentals and prototyping workflows.</p>
+                        <div class="pec-skills">
+                            <span>CNC Coding</span>
+                            <span>3D Printing</span>
+                            <span>Prototyping</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prof-exp-card" data-index="03">
+                    <div class="pec-connector"></div>
+                    <div class="pec-node">
+                        <i class="fa-solid fa-fire-flame-curved"></i>
+                    </div>
+                    <div class="pec-body">
+                        <div class="pec-header">
+                            <div class="pec-meta">
+                                <span class="pec-tag">Industrial</span>
+                                <span class="pec-index">03</span>
+                            </div>
+                            <h3 class="pec-title">Industrial Training</h3>
+                            <p class="pec-org"><i class="fa-solid fa-location-dot"></i> Abul Khair Steel (AKS)</p>
+                        </div>
+                        <p class="pec-desc">Comprehensive training in steel manufacturing operations — from raw material handling and rolling mill processes to finishing and quality inspection in one of Bangladesh's leading steel enterprises.</p>
+                        <div class="pec-skills">
+                            <span>Steel Manufacturing</span>
+                            <span>Rolling Mills</span>
+                            <span>Metallurgy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prof-exp-card" data-index="04">
+                    <div class="pec-connector"></div>
+                    <div class="pec-node">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                    </div>
+                    <div class="pec-body">
+                        <div class="pec-header">
+                            <div class="pec-meta">
+                                <span class="pec-tag">Teaching</span>
+                                <span class="pec-index">04</span>
+                            </div>
+                            <h3 class="pec-title">Teaching Experience</h3>
+                            <p class="pec-org"><i class="fa-solid fa-location-dot"></i> Higher Secondary Coaching Centers</p>
+                        </div>
+                        <p class="pec-desc">Delivered tutoring sessions in Physics, Mathematics, and Chemistry to HSC-level students. Developed strong communication and pedagogical skills while helping students prepare for university entrance examinations.</p>
+                        <div class="pec-skills">
+                            <span>Physics &amp; Math</span>
+                            <span>Mentoring</span>
+                            <span>Communication</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership & Extracurriculars -->
+        <section id="leadership" class="section reveal">
+            <div class="section-header">
+                <h2>Leadership &amp; Activities</h2>
+                <div class="sec-line blueprint-line"></div>
+            </div>
+            <div class="leadership-grid">
+                <div class="lead-card hover-img" data-img="sports-club.jpg" onclick="openModal(this)">
+                    <div class="lead-card-inner">
+                    <div class="lead-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+                    <h4>Office Secretary, Sports Club</h4>
+                    <p>Served as the office secretary for sports club of CUET for one year. Arranged multiple sports events and helped to maintain a succesful club.</p>
+                    <span class="photo-hint"><i class="fa-solid fa-image"></i> Click to view photo</span>
+                    </div>
+                </div>
+                <div class="lead-card hover-img" data-img="ccf-forum.jpg" onclick="openModal(this)">
+                    <div class="lead-card-inner">
+                    <div class="lead-icon"><i class="fa-solid fa-people-group"></i></div>
+                    <h4>Co-founder, CCF</h4>
+                    <p>I was one of the co-founder to found the CEUSC-CUET Forum to keep united the students and alumni that came from CUET School and College in CUET. </p>
+                    <span class="photo-hint"><i class="fa-solid fa-image"></i> Click to view photo</span>
+                    </div>
+                </div>
+                <div class="lead-card hover-img" data-img="football-captain.jpg" onclick="openModal(this)">
+                    <div class="lead-card-inner">
+                    <div class="lead-icon"><i class="fa-solid fa-futbol"></i></div>
+                    <h4>Team Captain</h4>
+                    <p>Led CUET Football Team in Inter-University Football Tournaments multiple times. Also <b>Captained</b> my Hall and Department in CUET Football Tournaments and won trophies </p>
+                    <span class="photo-hint"><i class="fa-solid fa-image"></i> Click to view photo</span>
+                    </div>
+                </div>
+                <div class="lead-card hover-img" data-img="covid-volunteer.jpg" onclick="openModal(this)">
+                    <div class="lead-card-inner">
+                    <div class="lead-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                    <h4>COVID-19 Volunteer</h4>
+                    <p>Bidyanondo Foundation &mdash; distributed food and essential supplies to underprivileged communities.</p>
+                    <span class="photo-hint"><i class="fa-solid fa-image"></i> Click to view photo</span>
+                    </div>
+                </div>
+		<div class="lead-card hover-img" data-img="covid-volunteer.jpg" onclick="openModal(this)">
+      <div class="lead-card-inner">
+                    <div class="lead-icon"><i class="fa-solid fa-flask"></i></div>
+                    <h4>Chemistry Olympiad</h4>
+                    <p>Participated in the preliminary round of the Bangladesh Chemistry Olympiad, a nationwide academic competition organized by the bangladesh chemical society in 2017 & 2018. Demonstrated strong analytical 
+                       problem solving skills by competing among top students at the regional level.</p>
+                    <span class="photo-hint"><i class="fa-solid fa-image"></i> Click to view photo</span>
+      </div>
+                </div>
+		<div class="lead-card hover-img" data-img="covid-volunteer.jpg" onclick="openModal(this)">
+      <div class="lead-card-inner">
+                    <div class="lead-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                    <h4>Fund Raiser-Covid Pendamic</h4>
+                    <p>Raised fund and collected apearl materials for underprivilaged and needy people during Ramadan and Pendamic. Managed the whole event financially and statically to make it a succesfull event.</p>
+                    <span class="photo-hint"><i class="fa-solid fa-image"></i> Click to view photo</span>
+      </div>
+                </div>
+		<div class="lead-card hover-img" data-img="covid-volunteer.jpg" onclick="openModal(this)">
+      <div class="lead-card-inner">
+                    <div class="lead-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                    <h4>Event Organizer</h4>
+                    <p>Organized Reunion Event in my school in 2024.Where almost 500 people attented including Teachers, Alumni and Running students.</p>
+                    <span class="photo-hint"><i class="fa-solid fa-image"></i> Click to view photo</span>
+      </div>
+                </div>
+            </div>
+        </section>
+	<!-- Awards & Achievements -->
+        <section id="awards" class="section reveal">
+            <div class="section-header">
+                <h2>Awards &amp; Achievements</h2>
+                <div class="sec-line blueprint-line"></div>
+            </div>
+            <div class="awards-grid">
+
+                <div class="award-card hover-img" data-img="MFL-Champ2025.jpg" onclick="openModal(this)">
+                    <div class="award-rank">01</div>
+                    <div class="award-shine"></div>
+                    <div class="award-body">
+                        <div class="award-icon-wrap">
+                            <i class="fa-solid fa-trophy"></i>
+                            <div class="award-icon-ring"></div>
+                        </div>
+                        <div class="award-tag">Champion</div>
+                        <h4 class="award-title">MFL 2025</h4>
+                        <p class="award-desc">Won the intra-department football tournament — Mechanical Football League (MFL)</p>
+                    </div>
+                    <div class="award-footer">
+                        <i class="fa-solid fa-image"></i> View Photo
+                    </div>
+                </div>
+
+                <div class="award-card hover-img" data-img="Finalist-of-CU-CTG League.jpg" onclick="openModal(this)">
+                    <div class="award-rank">02</div>
+                    <div class="award-shine"></div>
+                    <div class="award-body">
+                        <div class="award-icon-wrap">
+                            <i class="fa-solid fa-medal"></i>
+                            <div class="award-icon-ring"></div>
+                        </div>
+                        <div class="award-tag">Finalist</div>
+                        <h4 class="award-title">CTG League</h4>
+                        <p class="award-desc">Reached the final of the football tournament organized by Chittagong Administration at Chittagong University</p>
+                    </div>
+                    <div class="award-footer">
+                        <i class="fa-solid fa-image"></i> View Photo
+                    </div>
+                </div>
+
+                <div class="award-card hover-img" data-img="football-captain.jpg" onclick="openModal(this)">
+                    <div class="award-rank">03</div>
+                    <div class="award-shine"></div>
+                    <div class="award-body">
+                        <div class="award-icon-wrap">
+                            <i class="fa-solid fa-star"></i>
+                            <div class="award-icon-ring"></div>
+                        </div>
+                        <div class="award-tag">Leadership</div>
+                        <h4 class="award-title">Team Captain</h4>
+                        <p class="award-desc">Captained Kazi Nazrul Islam Hall, CUET in Football Tournament and led the university team in inter-university competition</p>
+                    </div>
+                    <div class="award-footer">
+                        <i class="fa-solid fa-image"></i> View Photo
+                    </div>
+                </div>
+
+                <div class="award-card hover-img" data-img="covid-volunteer.jpg" onclick="openModal(this)">
+                    <div class="award-rank">04</div>
+                    <div class="award-shine"></div>
+                    <div class="award-body">
+                        <div class="award-icon-wrap">
+                            <i class="fa-solid fa-futbol"></i>
+                            <div class="award-icon-ring"></div>
+                        </div>
+                        <div class="award-tag">Finalist</div>
+                        <h4 class="award-title">Inter-University Football</h4>
+                        <p class="award-desc">Represented CUET in the Ispahani Inter-University Football Tournament three consecutive times</p>
+                    </div>
+                    <div class="award-footer">
+                        <i class="fa-solid fa-image"></i> View Photo
+                    </div>
+                </div>
+
+            </div>
+        </section>
+	
+
+        <!-- References -->
+        <section id="references" class="section dark-section reveal">
+            <div class="section-header">
+                <h2>References</h2>
+                <div class="sec-line blueprint-line"></div>
+            </div>
+            <div class="ref-grid">
+                <div class="ref-card">
+                    <div class="ref-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                    <h4>Dr. Sajal Chandra Banik</h4>
+                    <p class="ref-title">Professor, Dept. of Mechanical Engineering, CUET</p>
+                    <div class="ref-contacts">
+                        <p><i class="fa-solid fa-phone"></i> +880 1920-565774</p>
+                        <p><i class="fa-solid fa-envelope"></i> baniksajal@cuet.ac.bd</p>
+                    </div>
+                </div>
+                <div class="ref-card">
+                    <div class="ref-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                    <h4>Dr. Mohammad Mizanur Rahman</h4>
+                    <p class="ref-title">Professor, Dept. of Mechanical Engineering, CUET</p>
+                    <div class="ref-contacts">
+                        <p><i class="fa-solid fa-phone"></i> +880 1864800089</p>
+                        <p><i class="fa-solid fa-envelope"></i> mmrahman_me@cuet.ac.bd</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fa-solid fa-gear gear-icon"></i>
+                ABU BAKKAR
+            </div>
+            <p class="footer-tagline">Mechanical Engineer &bull; Researcher &bull; Problem Solver</p>
+            <div class="socials">
+                <a href="https://linkedin.com/in/abu-bakkar-950694345" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="mailto:abmasuk00@gmail.com" aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Abu Bakkar. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- tsParticles -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.12.0/tsparticles.slim.bundle.min.js"></script>
+    <script src="script.js"></script>
+<div id="imageModal" class="modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg" alt="Leadership Activity">
+    </div>
+</body>
+</html>
